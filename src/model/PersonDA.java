@@ -13,7 +13,7 @@ public class PersonDA {
 
     public PersonDA() throws Exception {
         Class.forName("oracle.jdbc.driver.OracleDriver");
-        connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "mahdi", "myjava123");
+        connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "your database username", "your database password");
     }
 
     public void insert(Person person) throws Exception {
